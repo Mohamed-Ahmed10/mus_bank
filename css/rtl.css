@@ -1,0 +1,11 @@
+*
+{ text-direction:rtl
+}
+.navbar-header
+{
+	float: right;
+} 
+.navbar-nav > li
+{
+	float: right;
+}

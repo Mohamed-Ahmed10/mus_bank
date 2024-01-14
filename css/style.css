@@ -1,0 +1,402 @@
+*
+{
+	box-sizing: border-box;
+} 
+body
+{
+	padding: 0;
+	overflow-x: hidden;
+	background: url('../images/money.jpg');
+}
+.overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(130, 130, 130,.4)
+}
+/* start nav*/
+.navbar
+{
+	margin-bottom: 0;
+}
+ .navbar-default
+{
+	background-color: #1F2C84;
+	color: #000
+}
+.navbar .navbar-brand
+{
+	padding-top: 0
+}
+.navbar .logo
+{
+	height: 100px;
+	width: 100px;
+	margin-top: -10px
+}
+.navbar .container
+{
+	min-height: 80px
+}
+.navbar li>a
+{
+	font-size: 19px;
+	border-radius: 10px;
+	font-weight: bold;
+	color: #FFF !important
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
+{
+	background-color: #74b9ff
+}
+.navbar .navbar-collapse
+{
+	    padding-top: 15px;
+}
+nav .dropdown-menu
+{
+	min-width: 110px;
+	min-height: 70px;
+	top: 130%;
+	background-color: rgba(31, 44, 132, .7);
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+}
+nav .dropdown-menu li a
+{
+	text-align: center;
+	height:30px;
+	transition: all .4s ease-in-out;
+}
+nav.dropdown-menu li a:hover,
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus
+{
+	cursor: pointer;
+	background: #137ab7;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	-moz-border-radius: 10px;
+	transform: scale(1.1,1.1);
+}
+/* end nav*/
+.discription
+{
+    text-align: center;
+    height: auto;
+    font-size: 28px;
+    background: rgb(11, 50, 127,.7);
+    color: #EEE;
+    margin-top: 80px;
+    padding-top: 30px;
+}
+/* start sell & pay*/
+.sell_and_pay
+{
+	padding-top:40px 
+}
+
+.btn_div
+{
+	position: relative;
+}
+.currencies_button
+{
+	height: 45px;
+    font-size: 20px;
+    width: 190px;
+    font-family: 'Roboto', sans-serif;
+    background: #71C4FF;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    color: #FFF;
+    outline: none;
+    cursor: pointer;
+    text-transform: capitalize; 
+    transition:  all .3s ease-in-out;
+    text-align: center;
+    margin-left: 30%;
+    margin-bottom: 20px
+}
+.currencies_button a /* pay from internet*/
+{
+	font-family: 'Roboto', sans-serif;
+	color: #FFF;
+	text-decoration: none;
+}
+.btn_div .banks
+{
+	height: 250px;
+    width: 180px;
+    border-radius: 10px;
+    margin-left: 30%;
+    margin-top: 15px;
+	margin-bottom: 20px;
+    -moz-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+	background: rgba(27,27,27,.7);
+	overflow: hidden;
+	text-align: center;
+	line-height: 2em;
+	box-shadow: 5px 5px 20px 5px rgba(183, 183, 183,.7) ,
+                -5px 5px 20px 5px rgba(204, 204, 204,.7);
+    display: none;
+}
+.btn_div .banks>div
+{
+	cursor: pointer;
+    font-size: 20px;
+    height:12%;
+    transition: .5s all ease-in-out;
+}
+.btn_div .banks>div:hover
+{
+	transform:scale(1.3,1.3);
+	border-left: 25px solid #7E18D4;
+    border-right: 25px solid #7E18D4;
+}
+.btn_div .banks>div a
+{
+	text-decoration: none;
+	color: #0fbcf9
+}
+.btn_div button:only-child
+{
+	padding-top: 8px
+}
+/* end sell & pay*/
+.copy_right 
+{
+	background: #333;
+	color: #AAA;
+	padding: 15px 0;
+	margin-top: 20px;
+	font-size: 18px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+/* media*/
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	.navbar-brand
+	{
+		margin-bottom: 20px
+	}
+	.navbar-brand img
+	{
+		margin-left: 500px;
+	}
+	.dropdown-menu
+	{
+		top: 100%
+	}
+	.discription
+	{
+		margin-top: 100px;
+	}
+}
+@media (min-width:768px) and (max-width: 991px)
+{
+
+	.navbar-brand img
+	{
+		margin-left: 300px;
+	}
+	.dropdown-menu
+	{
+		top: 100%
+	}
+}
+@media (max-width:767px)
+{
+	.navbar-toggle
+	{
+		margin-top: 20px
+	}
+	.copy_right
+	{
+		position: static;
+	}
+}
+
+/* blog page*/
+.panel-group
+{
+	width: 60%;
+	text-align: center;
+	margin:100px auto;
+}
+
+/* privacy page*/
+.privacy_container,
+.about_us_container,
+.contact_us_container,
+.terms_of_use_container
+{
+	margin: 10px auto;
+	height: auto;
+	margin-top: 90px;
+	width: 70%;
+	color: #FFF;
+	text-align: right;
+	padding: 20px;
+	direction: rtl;
+	background-color: rgba(82,78,78,0.8)
+}
+.privacy_container h1,
+.about_us_container h1,
+.privacy_container h1,
+.contact_us_container h1,
+.terms_of_use_container h1
+{
+	text-align: center;
+	font-size: 35px;
+	color: #6c5ce7
+}
+.privacy_container h1
+{
+	font-size: 30px
+}
+.contact_us_container>div
+{
+	margin: 20px;
+	font-size: 24px;
+	text-align: center;
+}
+.privacy_container ul,
+.terms_of_use_container ul
+{
+	list-style: square
+}
+.privacy_container li,
+.about_us_container li ,
+.terms_of_use_container li
+{
+	margin: 10px;
+	font-size: 20px;
+}
+/* changge page*/
+.main
+{
+	margin: 100px auto;
+	width: 30%;
+}
+.pay , .pay_input ,.pay_output , .confirm
+{
+	height: 70px;
+	width: 300px;
+	background-color: #5B9BD5;
+	text-align: center;
+	line-height: 70px;
+	font-size: 20px;
+	color: #FFF;
+	margin-bottom:70px ;
+	border:1px solid #CCC;
+	border-radius: 10px;
+}
+.pay_input
+{
+	height: initial !important;
+	width: initial !important;
+}
+.confirm
+{
+	width: 500px;
+	height: auto;
+	line-height: 50px
+}
+.main button
+{
+	margin: 30px;
+	outline: none !important;
+}
+.main input[type=file]
+{
+	height: 40px;
+    font-size: 15px;
+    line-height: 40px;
+    border-radius: 20px;
+    display: initial;
+}
+.main input[type=text]
+{
+	height: 100%;
+	width: 100%;
+	color: #000;
+	border-radius: 20px;
+	outline: none;
+	text-align: center;
+}
+/* blog page*/
+.blog
+{
+	margin: 95px auto;
+	text-align: center;
+	color: #FFF;
+	font-size: 20px;
+}
+.blog .header
+{
+	width: 80%;
+}
+.blog .header>div
+{
+	cursor: pointer;
+	height: 50px;
+	display: inline-block;
+	width: 10%;
+	line-height: 50px;
+	background-color: #5B9BD5;
+	border-radius: 5px
+}
+.blog .row
+{
+	display: none;
+}
+.info
+{
+	margin-top: 20px
+}
+.blog .adsense_top
+{
+	height: 100px;
+	width: 90%;
+	background: #000;
+	line-height: 100px;
+	margin-top: 20px
+}
+.blog .right
+{
+	margin:10px;
+	display: inline-block;
+}
+.blog .right>div
+{
+	height: 100px;
+	background: #000;
+	margin-bottom:10px;
+	line-height: 100px
+}
+.blog .left
+{
+	width: 70%;
+	margin:10px;
+	display: inline-block;
+	color: #000;
+	text-align: right;
+}
+.blog .left>div
+{
+	margin-top: 10px;
+	background: #EEE;
+	padding: 10px
+}
